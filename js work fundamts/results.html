@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head> sum of numbers</head>
+
+    
+
+<body>
+    <script>
+       var jsmarks=parseInt(prompt("enter the jsmarks"));
+       var javamarks=parseInt(prompt("enter the javamarks"));
+       var pythonmarks=parseInt(prompt("enter the pythonmarks"));
+
+     var totalmarks=jsmarks+javamarks+pythonmarks;
+    document.write("total is :" +totalmarks);
+
+    var average=totalmarks/3;
+    document.write("average is:" +average);
+
+    if(jsmarks>=35 && javamarks>=35 && pythonmarks>=35)
+    {
+        document.write("pass");
+        if(average>=35 && average<60)
+        document.write("greade : A")
+        elseif(average>=60 && average<70)
+        document.write("greade : B");
+
+        if(average>=70 && average<=100)
+        document.write("greade : A ");
+    }
+    else{
+        document.write("fail");
+    }
+
+    
+    
+</script>
+
+</body>
+</html>
